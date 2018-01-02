@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="Targets.targets" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5BE9131-724A-4300-8C55-3DEA46357C97}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JE_Ex_Addin</RootNamespace>
+    <AssemblyName>JE_Ex_Addin</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(JsJewelAppPath)$(JsAppName).exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- .Net framework references-->
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Windows.Forms" />
+    <!-- JewelEarth API references -->
+    <Reference Include="Joa.JewelEarth.UI.Forms">
+      <HintPath>$(JsExePath)Joa.JewelEarth.UI.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.FluidModel">
+      <HintPath>$(JsExePath)Joa.JewelEarth.FluidModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.Framework">
+      <HintPath>$(JsExePath)Joa.JewelEarth.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.Graphics">
+      <HintPath>$(JsExePath)Joa.JewelEarth.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.Geodetic">
+      <HintPath>$(JsExePath)Joa.JewelEarth.Geodetic.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.Infrastructure.UI.Api">
+      <HintPath>$(JsExePath)Joa.JewelEarth.Infrastructure.UI.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.Mathematics.Api">
+      <HintPath>$(JsExePath)Joa.JewelEarth.Mathematics.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.Models">
+      <HintPath>$(JsExePath)Joa.JewelEarth.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.OpenWorksDataConnector">
+      <HintPath>$(JsExePath)Joa.JewelEarth.OpenWorksDataConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.ReservoirBasicObjects">
+      <HintPath>$(JsExePath)Joa.JewelEarth.ReservoirBasicObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.SimulationBox">
+      <HintPath>$(JsExePath)Joa.JewelEarth.SimulationBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.SurfaceContainers">
+      <HintPath>$(JsExePath)Joa.JewelEarth.SurfaceContainers.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.UI.Controls">
+      <HintPath>$(JsExePath)Joa.JewelEarth.UI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.UI.Framework">
+      <HintPath>$(JsExePath)Joa.JewelEarth.UI.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.UI.JewelExplorer">
+      <HintPath>$(JsExePath)Joa.JewelEarth.UI.JewelExplorer.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.UI.OpenInventor">
+      <HintPath>$(JsExePath)Joa.JewelEarth.UI.OpenInventor.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.UI.WellView">
+      <HintPath>$(JsExePath)Joa.JewelEarth.UI.WellView.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.UI.WorkflowAutomation">
+      <HintPath>$(JsExePath)Joa.JewelEarth.UI.WorkflowAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.UnitSystem">
+      <HintPath>$(JsExePath)Joa.JewelEarth.UnitSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.WellProjections">
+      <HintPath>$(JsExePath)Joa.JewelEarth.WellProjections.dll</HintPath>
+    </Reference>
+    <!-- reactive ui references -->
+    <Reference Include="ReactiveUI">
+      <HintPath>$(JsExePath)ReactiveUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>$(JsExePath)Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Core">
+      <HintPath>$(JsExePath)System.Reactive.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>$(JsExePath)System.Reactive.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>$(JsExePath)System.Reactive.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>$(JsExePath)System.Reactive.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Windows.Threading">
+      <HintPath>$(JsExePath)System.Reactive.Windows.Threading.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <!-- DevExpress references-->
+    <Reference Include="DevExpress.Data.v16.1">
+      <HintPath>$(JsExePath)DevExpress.Data.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1">
+      <HintPath>$(JsExePath)DevExpress.Utils.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1.UI">
+      <HintPath>$(JsExePath)DevExpress.Utils.v16.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v16.1.Core">
+      <HintPath>$(JsExePath)DevExpress.Charts.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v16.1">
+      <HintPath>$(JsExePath)DevExpress.XtraCharts.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v16.1.UI">
+      <HintPath>$(JsExePath)DevExpress.XtraCharts.v16.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v16.1">
+      <HintPath>$(JsExePath)DevExpress.XtraEditors.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v16.1">
+      <HintPath>$(JsExePath)DevExpress.XtraGrid.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v16.1">
+      <HintPath>$(JsExePath)DevExpress.XtraLayout.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v16.1">
+      <HintPath>$(JsExePath)DevExpress.XtraNavBar.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v16.1">
+      <HintPath>$(JsExePath)DevExpress.XtraTreeList.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v16.1">
+      <HintPath>$(JsExePath)DevExpress.XtraVerticalGrid.v16.1.dll</HintPath>
+    </Reference>
+    <!-- DevExpress design assemblies cannot be redistributed. 
+         This assembly can be resolved from the GAC when DevExpress is installed. -->
+    <Reference Include="DevExpress.XtraGrid.v16.1.Design" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\CreatePolylineSetExerciseCommand.cs" />
+    <Compile Include="Commands\ICreatePolylineSetExerciseCommand.cs" />
+    <Compile Include="JE_Ex_AddinPlugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="JE_Ex_Addin.pldf" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Targets.targets" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Exercise_Instructions.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <MyDocs>$([System.Environment]::GetFolderPath(SpecialFolder.MyDocuments))</MyDocs>
+    <JsMyDocs>
+      $(MyDocs)\$(JsProductName)\Plugins
+    </JsMyDocs>
+  </PropertyGroup>
+  <Target Name="AfterBuild">
+    <Error Condition="'$(JsSdkPath)' == ''" Text="JsSdkPath property in the .csproj file is empty, so signing this plug-in might fail." />
+    <Error Condition="'$(JsExePath)' == ''" Text="JsExePath property in the .csproj file is empty, so you might miss external resources." />
+    <Error Condition="'$(JsAppName)' == ''" Text="JsAppName property in the .csproj file is empty, so you might not be able to start JewelSuite or your JewelApp." />
+    <Error Condition="'$(JsProductName)' == ''" Text="JsProductName property in the .csproj file is empty, so this plug-in might not be copied to the 'Plugins' folder." />
+    <Exec Command="&quot;$(JsSdkPath)pluginutil.exe&quot; &quot;/verifypldf:$(TargetName).pldf&quot; &quot;/a:$(TargetDir)$(TargetFileName)&quot; &quot;/c:$(TargetDir)$(TargetName).pidf&quot;" WorkingDirectory="$(ProjectDir)" />
+    <Copy Condition="'$(JsDeployMyDocs)' != 'false'" SourceFiles="$(TargetPath)" DestinationFolder="$(JsMyDocs)" />
+    <Copy Condition="'$(JsDeployMyDocs)' != 'false'" SourceFiles="$(TargetDir)\$(TargetName).pidf" DestinationFolder="$(JsMyDocs)" />
+  </Target>
+  <PropertyGroup>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+</Project>
