@@ -73,8 +73,8 @@
 		m_uiService = uiService;
 		```
 	1. Update the usings
-1. in the OnExecute of the CreatePolylineSetAction call the command CreatePolylineSetExerciseCommand 
-	1. 
+1. in the `OnExecute` of the `CreatePolylineSetAction` call the command `CreatePolylineSetExerciseCommand` 
+	1. call the command CreatePolylineSetExerciseCommand
 		```c#
 		var command = m_factoryService.Create<ICreatePolylineSetExerciseCommand>();
 		m_commandRunner.ExecuteAsync(command);
