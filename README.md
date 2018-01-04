@@ -25,7 +25,7 @@
 	1. JE_Ex_Addin -> Commands -> CreatePolylineSetExerciseCommand -> Execute
 	1. After `var command = FactoryService.Create<IPolylineSetCreateCommand>();` insert the following
 ```c#
-			command.Name = @"myLines";
+		command.Name = @"myLines";
             command.Color = Color.Red.ToIColor();
             command.SetUnitSystem(UnitSystemDefinitionData.SI);
 
@@ -42,7 +42,7 @@
 1. Inject the needed services into the `CreatePolylineSetAction` constructor:
 	1. add some class level variables to `CreatePolylineSetAction`:
 ```c#
-	    private IFactoryService m_factoryService;
+	private IFactoryService m_factoryService;
         private readonly ICommandRunner m_commandRunner;
         private readonly IUiService m_uiService;
 ```
@@ -54,7 +54,7 @@
 ```
 	1. set the variables to the parameters in the constructor
 ```
-        m_factoryService = factoryService;
+	m_factoryService = factoryService;
         m_commandRunner = commandRunner;
         m_uiService = uiService;
 ```
@@ -62,10 +62,10 @@
 1. in the OnExecute of the CreatePolylineSetAction call the command CreatePolylineSetExerciseCommand 
 	1. 
 ```c#
-		var command = m_factoryService.Create<ICreatePolylineSetExerciseCommand>();
+	var command = m_factoryService.Create<ICreatePolylineSetExerciseCommand>();
 		m_commandRunner.ExecuteAsync(command);
 		m_uiService.RaiseUiUpdate(UiUpdateEventArgs.Empty);	
-```c#
+```
 	1. Update the usings
 1. Run Addin, press button and observe polylines
 	1. F5
