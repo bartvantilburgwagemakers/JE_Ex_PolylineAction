@@ -1,21 +1,22 @@
-# JE_Ex_PolylineAction
+# JE_Ex_PolylineAction Exercise Instructions
+
 0. make sure the Targets.targets, section paths_to_change are updated to point to the correct paths.
 
 1. Add an Action named AddPolylineAction to the strip
 	1. select new item from JE_Ex_Addin -> 
-	* Add -> 
-	* New Item -> 
-	* Installed -> 
-	* Visual C# Items -> 
-	* JewelEarth SDK -> 
-	* Jewel Strip Action ->
-	* Name : "AddPolylineAction" -> 
-	* Next -> 
-	* Strip configuration : "Exercises\Polyline\Create" ->
-	* Image : check -> 
-	* ... -> folder: SDK Strip icons 28x28 -> file: CreatePolyline_28.png
-	* Next -> 
-	* Finish
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add -> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New Item -> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Installed -> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Visual C# Items -> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JewelEarth SDK -> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jewel Strip Action ->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name : "AddPolylineAction" -> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Next -> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Strip configuration : "Exercises\Polyline\Create" ->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Image : check -> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... -> folder: SDK Strip icons 28x28 -> file: CreatePolyline_28.png
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Next -> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Finish
 1. Run Addin and Observe Button in strip
 	1. F5
 	1. New -> Sandbox Mode -> Use Sandbox mode
