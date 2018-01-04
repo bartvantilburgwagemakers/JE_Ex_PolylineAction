@@ -1,6 +1,7 @@
 ﻿using Joa.JewelEarth.Infrastructure.Startup.Abstractions;
 using Joa.JewelEarth.Basics;
 using JE_Ex_Addin.Commands;
+using Joa.JewelEarth.UI.Framework.Infrastructure;
 
 namespace JE_Ex_Addin
 {
