@@ -3,19 +3,19 @@
 
 1. Add an Action named AddPolylineAction to the strip
 	1. select new item from JE_Ex_Addin -> 
-				Add -> 
-				New Item -> 
-				Installed -> 
-				Visual C# Items -> 
-				JewelEarth SDK -> 
-				Jewel Strip Action ->
-				Name : "AddPolylineAction" -> 
-				Next -> 
-				Strip configuration : "Exercises\Polyline\Create" ->
-				Image : check -> 
-				... -> folder: SDK Strip icons 28x28 -> file: CreatePolyline_28.png
-				Next -> 
-				Finish
+				* Add -> 
+				* New Item -> 
+				* Installed -> 
+				* Visual C# Items -> 
+				* JewelEarth SDK -> 
+				* Jewel Strip Action ->
+				* Name : "AddPolylineAction" -> 
+				* Next -> 
+				* Strip configuration : "Exercises\Polyline\Create" ->
+				* Image : check -> 
+				* ... -> folder: SDK Strip icons 28x28 -> file: CreatePolyline_28.png
+				* Next -> 
+				* Finish
 1. Run Addin and Observe Button in strip
 	1. F5
 	1. New -> Sandbox Mode -> Use Sandbox mode
