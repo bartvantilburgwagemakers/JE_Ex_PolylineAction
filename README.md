@@ -23,7 +23,8 @@
 	1. It crashes! WHY ...
 1. Update CreatePolylineSetExerciseCommand with Name, Color, Unit, and nodes
 	1. JE_Ex_Addin -> Commands -> CreatePolylineSetExerciseCommand -> Execute
-	1. After var command = FactoryService.Create<IPolylineSetCreateCommand>(); insert the following
+	1. After `var command = FactoryService.Create<IPolylineSetCreateCommand>();` insert the following
+	```c#
 			command.Name = @"myLines";
             command.Color = Color.Red.ToIColor();
             command.SetUnitSystem(UnitSystemDefinitionData.SI);
@@ -36,6 +37,7 @@
             command.AddPolylineNode(1, 5, new Point3D(110, 20, 15));
             command.AddPolylineNode(1, 6, new Point3D(120, 30, 20));
             command.AddPolylineNode(1, 7, new Point3D(130, 40, 30));
+	```
 	1. Update the usings
 1. Inject the needed services into the CreatePolylineSetAction constructor:
 	1. add some class level variables to CreatePolylineSetAction:
