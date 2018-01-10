@@ -53,8 +53,8 @@
 		command.AddPolylineNode(1, 7, new Point3D(130, 40, 30));
 		```
 	1. Update the usings
-1. Inject the needed services into the `CreatePolylineSetAction` constructor:
-	1. add some class level variables to `CreatePolylineSetAction`:
+1. Inject the needed services into the `AddPolylineAction` constructor:
+	1. add some class level variables to `AddPolylineAction`:
 		```c#
 		private IFactoryService m_factoryService;
 		private readonly ICommandRunner m_commandRunner;
@@ -73,7 +73,7 @@
 		m_uiService = uiService;
 		```
 	1. Update the usings
-1. in the `OnExecute` of the `CreatePolylineSetAction` call the command `CreatePolylineSetExerciseCommand` 
+1. in the `OnExecute` of the `AddPolylineAction` call the command `CreatePolylineSetExerciseCommand` 
 	1. call the command CreatePolylineSetExerciseCommand
 		```c#
 		var command = m_factoryService.Create<ICreatePolylineSetExerciseCommand>();
