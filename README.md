@@ -56,7 +56,7 @@
 1. Inject the needed services into the `AddPolylineAction` constructor:
 	1. add some class level variables to `AddPolylineAction`:
 		```c#
-		private IFactoryService m_factoryService;
+		private readonly IFactoryService m_factoryService;
 		private readonly ICommandRunner m_commandRunner;
 		private readonly IUiService m_uiService;
 		```
