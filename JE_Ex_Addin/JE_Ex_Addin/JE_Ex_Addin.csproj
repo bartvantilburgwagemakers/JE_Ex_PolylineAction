@@ -190,10 +190,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Targets.targets" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="_Exercise_Instructions.txt" />
+    <None Include="Targets.targets">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
